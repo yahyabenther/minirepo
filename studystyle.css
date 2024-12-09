@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body:after {        min-height: 100vh;
+    overflow-y: auto; /* Enables scrolling */
+    background: url("Untitled design.png") no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.div1{
+    margin: 30px;
+    padding: 30px;
+    width: 362px;
+    height: 362px;
+    position: fixed;
+    left: 0;
+    height: 200px;
+    border-radius: 50%;
+
+
+}
+.image00{
+
+   
+        border-radius: 50%; /* Makes the image a circle */
+        overflow: hidden; /* Ensures content stays within the circle */
+    animation: mymove 200s infinite;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(180deg);}
+}
+
+/* Left Section (div2) */
+.div2 {
+    width: 40%; /* Takes up 40% of the screen width */
+    max-width: 500px; /* Limits maximum width */
+    padding: 20px;
+    background-color: rgba(0, 255, 255, 0.7); /* Transparent aqua background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+    margin: 20px; /* Space around the element */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+    direction: rtl; /* Right-to-left alignment for Arabic content */
+    position: fixed; /* Fixes the element in place */
+    right: 20px; /* Positions the element on the right */
+    top: 50%; /* Centers vertically */
+    transform: translateY(-50%); /* Corrects vertical alignment */
+}
+table {
+    
+    border-collapse: collapse;
+    margin: 20px 0;
+    direction: rtl;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: right;
+}
+th {
+    background-color: #f4f4f4;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,81 @@
+
+body{
+    direction: rtl;
+    background: url("Untitled design.png") no-repeat center center/cover;
+    height: 1800px;
+    color: #ddd;
+}
+.div1{
+    margin: 15px;
+    padding: 15px;
+    height: 100px;
+    width: 100%;
+   
+    
+}
+.div2{
+    margin: 10px;
+    padding: auto;
+    width: 362px;
+    height: 362px;
+    border-radius: 50%;
+    direction: ltr;
+    position:fixed;
+    left: 0;
+   
+
+}
+.image00{
+    border-radius: 50%; /* Makes the image a circle */
+    overflow: hidden; /* Ensures content stays within the circle */
+    animation: mymove 200s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(180deg);}
+  }
+.div3{
+    width: 60%;
+    margin: 10px;
+    padding: auto;
+    height: 1300px;
+    right: 0;
+  
+    
+}
+table {
+    
+    border-collapse: collapse;
+    margin: 20px 0;
+    direction: rtl;
+}
+th, td {
+    border: 1px solid #0c0a0a;
+    padding: 8px;
+    text-align: right;
+}
+th {
+    background-color: #0f0c0c;
+}
+tr:nth-child(even) {
+    background-color: #0e0a0a;
+}
+tr:hover {
+    background-color: #0c0909;
+}
+footer{
+    width: 100%;
+ 
+}
+.srss{
+    padding: 10px;
+    margin: 15px;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+}
+.srss:hover{
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0)
+       
+    
+}
